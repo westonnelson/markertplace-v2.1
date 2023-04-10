@@ -104,14 +104,14 @@ const Navbar = () => {
                   src="/reservoirMarketLogo.svg"
                   width={112}
                   height={36}
-                  alt="Reservoir"
+                  alt="NFTEarth"
                 />
               ) : (
                 <Image
-                  src="/reservoirMarketLogoLight.svg"
+                  src="https://nftearth.exchange/nftearth-icon-new.png"
                   width={112}
                   height={36}
-                  alt="Reservoir"
+                  alt="NFTEarth"
                 />
               )}
             </Box>
@@ -119,7 +119,7 @@ const Navbar = () => {
           <Box css={{ flex: 1, px: '$5', maxWidth: 460 }}>
             <GlobalSearch
               ref={searchRef}
-              placeholder="Search collections and addresses"
+              placeholder="Search NFTs"
               containerCss={{ width: '100%' }}
               key={router.asPath}
             />
@@ -133,9 +133,7 @@ const Navbar = () => {
             <Link href="/portfolio">
               <NavItem active={router.pathname == '/portfolio'}>Sell</NavItem>
             </Link>
-            <Link href="https://docs.reservoir.tools/docs">
-              <NavItem active={false}>Docs</NavItem>
-            </Link>
+           
           </Flex>
         </Flex>
       </Box>

@@ -32,33 +32,45 @@ const SectionLink: FC<SectionLinkProps> = ({ name, href }) => (
 
 const developerSectionLinks = [
   {
-    name: 'Docs',
-    href: 'https://docs.reservoir.tools/docs',
+    name: 'GitHub',
+    href: 'https://github.com/NFTEarth',
   },
   {
-    name: 'API Reference',
-    href: 'https://docs.reservoir.tools/reference/overview',
+    name: 'API',
+    href: 'https://api.nftearth.exchange',
   },
   {
-    name: 'Github',
-    href: 'https://github.com/reservoirprotocol',
+    name: 'Status',
+    href: 'https://status.nftearth.exchange/',
   },
 ]
 
-const companySectionLinks = [
+const resourcesSectionLinks = [
   {
-    name: 'Jobs',
-    href: 'https://jobs.ashbyhq.com/reservoir',
+    name: 'Learn About NFTs',
+    href: '/learn-nfts',
   },
   {
-    name: 'Terms of Use',
-    href: 'https://reservoir.tools/terms',
+    name: '$NFTE Token',
+    href: 'https://www.coingecko.com/en/coins/nftearth',
   },
   {
-    name: 'Privacy Policy',
-    href: 'https://reservoir.tools/privacy',
+    name: 'Brand',
+    href: 'https://docs.nftearth.exchange/resources/brand-assets',
   },
 ]
+
+const protocolSectionLinks = [
+  {
+    name: 'Terms',
+    href: '/terms',
+  },
+  {
+    name: 'Privacy',
+    href: '/privacy',
+  },
+]
+
 
 export const Footer = () => {
   return (
@@ -84,27 +96,23 @@ export const Footer = () => {
             <SectionLink key={props.name} {...props} />
           ))}
         </Flex>
-        <Flex direction="column">
-          <SectionTitle title="Company" />
-          {companySectionLinks.map((props) => (
-            <SectionLink key={props.name} {...props} />
-          ))}
-        </Flex>
+       
       </Flex>
       <Flex
         direction="column"
         css={{ alignItems: 'flex-start', '@bp600': { alignItems: 'flex-end' } }}
       >
-        <SectionTitle title="Join Reservoir Community" />
+        <SectionTitle title="Community" />
         <Flex css={{ gap: '$4', mt: 16 }}>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/reservoir0x"
+            href="https://twitter.com/NFTEarth_L2"
           >
             <Button size="xs" color="gray3">
               <FontAwesomeIcon icon={faTwitter} width={14} height={14} />
             </Button>
+            
           </a>
         </Flex>
       </Flex>
