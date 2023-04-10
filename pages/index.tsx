@@ -86,15 +86,12 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             css={{ mx: 'auto', maxWidth: 728, pt: '$5', textAlign: 'center' }}
           >
             <Text style="h3" css={{ mb: 24 }}>
-            NFTΞarth
+              NFTΞarth
             </Text>
             <Text style="body1" css={{ mb: 48 }}>
-           Trade NFTs on Layer2
+              Trade NFTs on Layer2
             </Text>
-            <a
-              href="https://github.com/NFTEarth"
-              target="_blank"
-            >
+            <a href="https://github.com/NFTEarth" target="_blank">
               <Button color="gray3">NFTEarth is open-source: GitHub</Button>
             </a>
           </Flex>

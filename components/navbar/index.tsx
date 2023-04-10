@@ -101,14 +101,14 @@ const Navbar = () => {
             <Box css={{ width: 112, cursor: 'pointer' }}>
               {theme == 'dark' ? (
                 <Image
-                  src="/nftearth-icon-new.png"
+                  src="/icons/nftearth-icon-new.png"
                   width={112}
                   height={36}
                   alt="NFTEarth"
                 />
               ) : (
                 <Image
-                  src="https://nftearth.exchange/nftearth-icon-new.png"
+                  src="/icons/nftearth-icon-new.png"
                   width={112}
                   height={36}
                   alt="NFTEarth"
