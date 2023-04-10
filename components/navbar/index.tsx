@@ -101,7 +101,7 @@ const Navbar = () => {
             <Box css={{ width: 112, cursor: 'pointer' }}>
               {theme == 'dark' ? (
                 <Image
-                  src="/reservoirMarketLogo.svg"
+                  src="/nftearth-icon-new.png"
                   width={112}
                   height={36}
                   alt="NFTEarth"

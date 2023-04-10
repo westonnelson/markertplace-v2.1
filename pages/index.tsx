@@ -89,13 +89,13 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             NFTΞarth
             </Text>
             <Text style="body1" css={{ mb: 48 }}>
-            NFTΞarth is a L2 NFT Marketplace built on the open-source platform Reservoir.
+           Trade NFTs on Layer2
             </Text>
             <a
               href="https://github.com/NFTEarth"
               target="_blank"
             >
-              <Button color="gray3">View NFTEarth on GitHub</Button>
+              <Button color="gray3">NFTEarth is open-source: GitHub</Button>
             </a>
           </Flex>
         )}

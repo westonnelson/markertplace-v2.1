@@ -63,11 +63,11 @@ const resourcesSectionLinks = [
 const protocolSectionLinks = [
   {
     name: 'Terms',
-    href: '/terms',
+    href: 'https://nftearth.exchange/terms',
   },
   {
     name: 'Privacy',
-    href: '/privacy',
+    href: 'https://nftearth.exchange/privacy',
   },
 ]
 
