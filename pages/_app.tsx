@@ -49,7 +49,7 @@ const { chains, provider } = configureChains(supportedChains, [
 ])
 
 const { connectors } = getDefaultWallets({
-  appName: 'Reservoir Marketplace',
+  appName: 'NFTEarth Marketplace',
   chains,
 })
 
@@ -63,7 +63,7 @@ const wagmiClient = createClient({
 const reservoirKitThemeOverrides = {
   headlineFont: inter.style.fontFamily,
   font: inter.style.fontFamily,
-  primaryColor: '#6E56CB',
+  primaryColor: '#79ffa8',
   primaryHoverColor: '#644fc1',
 }
 

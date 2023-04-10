@@ -86,17 +86,16 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             css={{ mx: 'auto', maxWidth: 728, pt: '$5', textAlign: 'center' }}
           >
             <Text style="h3" css={{ mb: 24 }}>
-              Open Source Marketplace
+            NFTΞarth
             </Text>
             <Text style="body1" css={{ mb: 48 }}>
-              Reservoir Marketplace is an open-source project that showcases the
-              latest and greatest features of the Reservoir Platform.
+            NFTΞarth is a L2 NFT Marketplace built on the open-source platform Reservoir.
             </Text>
             <a
-              href="https://github.com/reservoirprotocol/marketplace-v2"
+              href="https://github.com/NFTEarth"
               target="_blank"
             >
-              <Button color="gray3">View Source Code</Button>
+              <Button color="gray3">View NFTEarth on GitHub</Button>
             </a>
           </Flex>
         )}
@@ -114,7 +113,7 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             }}
           >
             <Text style="h4" as="h4">
-              Popular Collections
+              Trending Collections
             </Text>
             <Flex align="center" css={{ gap: '$4' }}>
               <CollectionsTimeDropdown
