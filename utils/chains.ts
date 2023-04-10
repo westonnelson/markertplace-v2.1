@@ -1,4 +1,4 @@
-import { arbitrum, goerli, mainnet, polygon, Chain } from 'wagmi/chains'
+import { arbitrum, optimism, mainnet, polygon, Chain } from 'wagmi/chains'
 
 //CONFIGURABLE: The default export controls the supported chains for the marketplace. Removing
 // or adding chains will result in adding more or less chains to the marketplace.
@@ -19,9 +19,9 @@ type ReservoirChain = Chain & {
 export const DefaultChain: ReservoirChain = {
   ...mainnet,
   // Any url to display the logo of the chain in light mode
-  lightIconUrl: '/icons/eth-icon-dark.svg',
+  lightIconUrl: 'https://assets.coingecko.com/coins/images/279/small/ethereum.png?1595348880',
   // Any url to display the logo of the chain in dark mode
-  darkIconUrl: '/icons/eth-icon-light.svg',
+  darkIconUrl: 'https://assets.coingecko.com/coins/images/279/small/ethereum.png?1595348880',
   // The base url of the reservoir api, this is used in the app when
   // directly interacting with the reservoir indexer servers (in the api proxy for example)
   // or when prefetching server side rendered data
@@ -48,8 +48,8 @@ export default [
   DefaultChain,
   {
     ...polygon,
-    lightIconUrl: '/icons/polygon-icon-dark.svg',
-    darkIconUrl: '/icons/polygon-icon-light.svg',
+    lightIconUrl: 'https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912',
+    darkIconUrl: 'https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912',
     reservoirBaseUrl: 'https://api-polygon.reservoir.tools',
     proxyApi: '/api/reservoir/polygon',
     routePrefix: 'polygon',
@@ -61,12 +61,24 @@ export default [
   {
     ...arbitrum,
     name: 'Arbitrum',
-    lightIconUrl: '/icons/arbitrum-icon-dark.svg',
-    darkIconUrl: '/icons/arbitrum-icon-light.svg',
+    lightIconUrl: 'https://assets.coingecko.com/asset_platforms/images/33/small/AO_logomark.png?1679733357',
+    darkIconUrl: 'https://assets.coingecko.com/asset_platforms/images/33/small/AO_logomark.png?1679733357',
     reservoirBaseUrl: 'https://api-arbitrum.reservoir.tools',
     proxyApi: '/api/reservoir/arbitrum',
     routePrefix: 'arbitrum',
     apiKey: process.env.ARBITRUM_RESERVOIR_API_KEY,
     coingeckoId: 'arbitrum-iou',
   },
+  {
+    ...optimism,
+    name: 'Optimism',
+    lightIconUrl: 'https://assets.coingecko.com/coins/images/25244/small/Optimism.png?1660904599',
+    darkIconUrl: 'https://assets.coingecko.com/coins/images/25244/small/Optimism.png?1660904599',
+    reservoirBaseUrl: 'https://api-optimism.reservoir.tools',
+    proxyApi: '/api/reservoir/optimism',
+    routePrefix: 'optimism',
+    apiKey: process.env.OPTIMISM_RESERVOIR_API_KEY,
+    coingeckoId: 'optimism',
+  },
+
 ] as ReservoirChain[]

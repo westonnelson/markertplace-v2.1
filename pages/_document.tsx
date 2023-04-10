@@ -35,7 +35,7 @@ class MyDocument extends Document {
         <link
           rel="shortcut icon"
           type="image/svg"
-          href="https://marketplace.reservoir.tools/reservoir.svg"
+          href="https://nftearth.exchange/nftearth-icon-new.png"
         />
 
         {/* Reservoir meta tags */}
@@ -44,10 +44,6 @@ class MyDocument extends Document {
         <meta
           property="reservoir:token-url-mainnet"
           content="/collection/ethereum/${contract}/${tokenId}"
-        />
-        <meta
-          property="reservoir:token-url-goerli"
-          content="/collection/goerli/${contract}/${tokenId}"
         />
         <meta
           property="reservoir:token-url-polygon"
