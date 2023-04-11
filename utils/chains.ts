@@ -80,5 +80,37 @@ export default [
     apiKey: process.env.OPTIMISM_RESERVOIR_API_KEY,
     coingeckoId: 'optimism',
   },
+{
+  ...zkevm
+  lightIconUrl: 'https://zkevm.polygonscan.com/',
+  darkIconUrl: 'https://zkevm.polygonscan.com/',
 
+  id: 1101,
+  
+  nativeCurrency: {
+    decimals: 18,
+    name: "Ether",
+    symbol: "ETH",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://zkevm-rpc.com"]
+    },
+    public: {
+      http: ["https://zkevm-rpc.com"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "PolygonzkEVMScan",
+      url: "https://zkevm.polygonscan.com",
+    },
+  },
+  lightIconUrl: 'https://zkevm.polygonscan.com/',
+  darkIconUrl: 'https://zkevm.polygonscan.com/',
+  reservoirBaseUrl: process.env.ZKEVM_RESERVOIR_API_BASE,
+  proxyApi: '/api/nftearth/zkevm',
+  routePrefix: 'zkevm',
+  apiKey: process.env.ZKEVM_RESERVOIR_API_KEY,
+},
 ] as ReservoirChain[]
